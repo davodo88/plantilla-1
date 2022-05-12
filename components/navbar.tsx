@@ -19,10 +19,10 @@ const responsiveMenu = [
   
 
   return (
-    <nav className="flex justify-between  my-auto p-1  bg-slate-50">
-      <div>
+    <nav className="relative flex justify-between items-center  w-full  bg-slate-50">
+      <div className="flex">
         <svg
-          className="flex h-6 w-6 text-orange-500 ml-5"
+          className=" h-6 w-6 z-20 text-orange-500 ml-5"
           width="10"
           height="10"
           viewBox="5 -8 30 30"
@@ -42,8 +42,8 @@ const responsiveMenu = [
           <line x1="9" y1="18" x2="9" y2="18.01" />
         </svg>
       </div>
-      <div className="  justify-center  sm:inline">
-        <ul className=" hidden sm:flex mt-2  text-xs font-light font-serif">
+      <div className=" hidden sm:flex  ">
+        <ul className="flex mt-2  text-xs font-light font-serif">
           <li className="mx-1.5">
             <Link href="">
               <a className=" hover:text-orange-500 ">HOME</a>
@@ -71,12 +71,45 @@ const responsiveMenu = [
           </li>
         </ul>
       </div>
-      <button id="busqueda" 
-        onClick={handleNavbar}
-        className="">
-        <div className="flex">
+      <div className="hidden sm:flex">
+        <svg
+          id="#lupa"
+          className="h-5 w-5 text-black-500 mt-2"
+          width="10"
+          height="10"
+          viewBox="0 0 40 30"
+          stroke-width="2"
+          stroke="currentColor"
+          fill="none"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+        >
+          {" "}
+          <path stroke="none" d="M0 0h24v24H0z" />{" "}
+          <circle cx="10" cy="10" r="7" />{" "}
+          <line x1="21" y1="21" x2="15" y2="15" />
+        </svg>
+      </div>
+     
+        {menu && (
+          <div className="flex absolute top-10 right-3 justify-center bg-slate-200/50 z-40 h-30 ">
+            <ul>
+              {responsiveMenu.map((etiqueta, index) => {
+                return (
+                  <li key={index} className="p-2 hover:text-orange-500">
+                    <a href={etiqueta.target}>{etiqueta.name}</a>
+                  </li>
+                );
+              })}
+            </ul>
+          </div>
+        )}
+     
+      <button id="busqueda" onClick={handleNavbar} className="sm:hidden flex">
+        <div className="flex mr-5 ">
           <svg
-            className="h-5 w-5 text-black-500 mt-2"
+            id="#lupa"
+            className=" h-5 w-5 text-black-500 mt-2 flex"
             width="10"
             height="10"
             viewBox="0 0 40 30"
@@ -92,7 +125,8 @@ const responsiveMenu = [
             <line x1="21" y1="21" x2="15" y2="15" />
           </svg>
           <svg
-            className="h-5 w-5 text-orange-500"
+            id="#lineas"
+            className="h-5 w-5 text-orange-500 flex"
             width="24"
             height="24"
             viewBox="10 -2 15 20"
@@ -109,19 +143,6 @@ const responsiveMenu = [
           </svg>
         </div>
       </button>
-      {menu && (
-        <div className="absolute flex justify-center right-40 w-20 h-30 bg-slate-200">
-          <ul>
-            {responsiveMenu.map((etiqueta, index) => {
-              return (
-                <li key={index}>
-                  <a href={etiqueta.target}>{etiqueta.name}</a>
-                </li>
-              );
-            })}
-          </ul>
-        </div>
-      )}
     </nav>
   );
 }

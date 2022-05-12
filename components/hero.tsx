@@ -6,19 +6,67 @@ import VentanaNaranja from "../images/ventanaNaranja.jpg"
 const Hero = () => {
 
     return (
-      <section className="flex gap-3">
-        <div className="flex flex-col mx-auto item-center justify-center   grow">
-            <div className="p-2 sm:text-center text-xs lg:text-xl capitalize text-orange-500">architecture</div>
-            <div className="p-2 sm:text-center text-3xl lg:text-5xl font-bold">New Way<br /> Of Living.</div>
-            <div className="p-2 sm:text-center text-xs lg:text-xl font-extralight text-gray-700">Change the way yo life,<br /> closer to nature.</div>
-            <button className="content-center border-2 border-state-100 bg-slate-100 active:bg-slate-200 text-xs p-3 ">Explore</button>           
-        </div>
-        <div className="flex mx-auto gap-1 lg:gap-5 justify-center p-2 grow">
-            <div className="sm:inline"><Image src={VentanaNaranja} width={100} height={200}></Image></div>
-            <div className="hidden sm:inline"><Image src={VentanaNaranja} width={100} height={160} ></Image></div>
-            <div className="hidden sm:inline"><Image src={VentanaNaranja} width={100} height={125} ></Image></div>
-        </div>
-      </section>
+      <div id="#home">
+        <section className="block sm:flex gap-3">
+          <div className="flex flex-col mx-auto items-center  sm:justify-items-start   grow">
+            <div className="p-2 sm:text-start text-4xl sm:text-xs lg:text-xl capitalize text-orange-500">
+              architecture
+            </div>
+            <div className="p-2 text-center sm:text-start text-6xl sm:text-3xl lg:text-5xl font-bold">
+              New Way
+              <br /> Of Living.
+            </div>
+            <div className="p-2 text-center sm:text-start text-xl sm:text-xs lg:text-xl font-extralight text-gray-700">
+              Change the way yo life,
+              <br /> closer to nature.
+            </div>
+            <button className="  w-24 border-2 border-state-100 bg-slate-100 active:bg-slate-200 text-xs p-3 ">
+              Explore
+            </button>
+          </div>
+          <div className="flex mx-auto gap-1 lg:gap-5 justify-center p-2 grow">
+            <div className="inline mt-5  ">
+              <Image src={VentanaNaranja} width={120} height={200}></Image>
+            </div>
+            <div className="hidden mt-5  sm:inline">
+              <Image src={VentanaNaranja} width={120} height={160}></Image>
+            </div>
+            <div className="hidden mt-5  sm:inline">
+              <Image src={VentanaNaranja} width={120} height={125}></Image>
+            </div>
+          </div>
+        </section>
+        <section className="w-full h-28 flex justify-around  mt-16">
+          <div className="text-xs text-center font-thin text-slate-700 flex">
+            01<span className="text-4xl -mt-2">/</span>
+            <span className="text-xs text-left">
+              Interior Design From
+              <br /> The <span className="text-orange-500">India</span>
+            </span>
+          </div>
+          <div className=" text-xs text-center font-thin text-slate-700 hidden sm:flex">
+            02<span className="text-4xl -mt-2">/</span>
+            <span className="text-xs text-left">
+              Interior Design From
+              <br /> The <span className="text-orange-500">India</span>
+            </span>
+          </div>
+          <div className=" text-xs text-center font-thin text-slate-700 hidden sm:flex">
+            03<span className="text-4xl -mt-2">/</span>
+            <span className="text-xs text-left">
+              Interior Design From
+              <br /> The <span className="text-orange-500">India</span>
+            </span>
+          </div>
+          <div className=" text-xs text-center font-thin text-slate-700 hidden sm:flex">
+            04<span className="text-4xl -mt-2">/</span>
+            <span className="text-xs text-left">
+              Interior Design From
+              <br /> The <span className="text-orange-500">India</span>
+            </span>
+          </div>
+        </section>
+      </div>
     );
 }
 export default Hero;
