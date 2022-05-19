@@ -6,6 +6,7 @@ import Hero from '../components/hero'
 import Info from '../components/info'
 import Contact from '../components/contact'
 
+
 const Home: NextPage = () => {
   return (
     <>
@@ -22,8 +23,9 @@ const Home: NextPage = () => {
         <Contact />
       </body>
 
-      <footer className="font-serif  bg-black text-white h-15 text-xs lg:text-lg lg:justify-around w-screen">
+      <footer className="font-serif  bg-black text-white  w-screen">
         <Footer />
+      
       </footer>
     </>
   );

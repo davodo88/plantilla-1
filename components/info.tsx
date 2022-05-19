@@ -7,7 +7,7 @@ import FachadaNaranja from "../images/informacion/fachadaNaranja.jpg"
 
 function Info () {
     return (
-      <section>
+      <section id="informacion">
         <div className="block sm:flex">
           <div className="grow sm:ml-10 sm:mb-10 text-center ">
             <div className="block sm:hidden">
@@ -25,9 +25,7 @@ function Info () {
               </span>
             </div>
             <div className="hidden sm:block">
-              <span className="text-orange-500 text-sm">
-                ARCHITECTURE FIRM
-              </span>
+              <span className="text-orange-500 text-sm">ARCHITECTURE FIRM</span>
               <br />
               <span className="text-5xl">
                 Our{" "}
@@ -52,31 +50,30 @@ function Info () {
           <div className="block my-4 sm:ml-7 justify-self-center">
             <Image src={FachadaNaranja} width={800} height={250}></Image>
             <div className="text-center sm:text-left">
-              <span className="text-orange-500 ">
-                  Residential</span>
+              <span className="text-orange-500 ">Residential</span>
               <br />
               <span>Gomez Vazquez International</span>
             </div>
           </div>
-          <div className="hidden sm:block my-4 mr-7 justify-self-center ">
+          <div className=" block my-4 sm:mr-7 justify-self-center ">
             <Image src={EscalerasBlancas} width={800} height={250}></Image>
-            <div>
+            <div className="text-center sm:text-left">
               <span className="text-orange-500">Residential</span>
               <br />
               <span>Space Matrix</span>
             </div>
           </div>
-          <div className="hidden sm:block my-4  ml-7 justify-self-center">
+          <div className=" block my-4  sm:ml-7 justify-self-center">
             <Image src={PasilloOscuro} width={800} height={250}></Image>
-            <div>
+            <div className="text-center sm:text-left">
               <span className="text-orange-500">Residential</span>
               <br />
               <span>Ryder</span>
             </div>
           </div>
-          <div className="hidden sm:block my-4 mr-7 justify-self-center">
+          <div className=" sm:block my-4 sm:mr-7 justify-self-center">
             <Image src={EsquinaCristalera} width={800} height={250}></Image>
-            <div>
+            <div className="text-center sm:text-left">
               <span className="text-orange-500">Residential</span>
               <br />
               <span>Progetto</span>
