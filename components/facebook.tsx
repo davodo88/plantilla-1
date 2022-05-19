@@ -2,13 +2,14 @@ import React from "react";
 
 const Facebook = () => {
   return (
-    <div>
+    <div >
     
         <svg
           xmlns="http://www.w3.org/2000/svg"
           width="25"
           height="25"
           viewBox="0 0 32 32"
+          className="rounded"
           
         >
           <path fill="#3B5998" d="M0 0h32v32H0z" />
