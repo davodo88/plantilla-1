@@ -8,7 +8,7 @@ import Maps from '../images/contact/google-maps-icon.jpg'
 
 function Contact () {
     return (
-      <section className="bg-gray-100 w-screen block sm:flex sm:text-center p-3">
+      <section className="bg-gray-100 w-screen block p-5 sm:flex sm:text-center ">
         <div className="block grow md:m-5 align-middle  ">
           <div
             id="contact"
@@ -22,8 +22,8 @@ function Contact () {
               className="rotate-12"
             ></Image>
           </div>
-          <div className="grid grid-cols-4 grid-rows-1 justify-around h-20 md:h-36">
-            <div className="   ">
+          <div className="block md:flex justify-around my-8 lg:h-40 md:h-36">
+            <div className=" hidden lg:flex  ">
               <svg
                 className=" mt-3 text-orange-500 "
                 width="auto"
@@ -45,16 +45,8 @@ function Contact () {
                 <line x1="9" y1="18" x2="9" y2="18.01" />
               </svg>
             </div>
-            <div className="  block text-center col-span-2 ">
-              <div className=" mt-3 md:mt-auto md:p-4 flex md:space-x-4 justify-around">
-                <span className="underline md:text-xl  text-xs lg:text-xl decoration-orange-500 ">
-                  Email :
-                </span>
-                <span className="text-xs md:text-base lg:text-xl">
-                  dsgarta@gmail.com
-                </span>
-              </div>
-              <div className="mt-3  md:p-4 flex justify-around md:space-x-5 text-center ">
+            <div className=" flex flex-col text-center mb-10 lg:ml-52">
+              <div className="mt-3  md:p-4 flex justify-center md:space-x-5 text-center ">
                 <span className="underline md:text-xl decoration-orange-500 text-sm lg:text-xl text-right">
                   Phone :
                 </span>
@@ -62,6 +54,15 @@ function Contact () {
                   +34 985 412 753
                 </span>
               </div>
+              <div className=" mt-3 md:mt-auto md:p-4 flex md:space-x-4 justify-center">
+                <span className="underline md:text-xl  text-xs lg:text-xl decoration-orange-500 ">
+                  Email :
+                </span>
+                <span className="text-xs md:text-base lg:text-xl">
+                  dsgarta@gmail.com
+                </span>
+              </div>
+              
             </div>
             <div className="mr-2">
               <iframe

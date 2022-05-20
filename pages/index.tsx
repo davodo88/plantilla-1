@@ -11,7 +11,7 @@ const Home: NextPage = () => {
   return (
     <>
       <Head>
-
+        
       </Head>
       <header className="w-screen">
         <Navbar />

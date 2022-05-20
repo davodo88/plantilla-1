@@ -22,7 +22,7 @@ const responsiveMenu = [
     <nav className="relative flex  justify-between items-center  w-full  bg-slate-50">
       <div className="flex">
         <svg
-          className=" h-6 w-6 z-20 text-orange-500 ml-5"
+          className=" h-8 w-8 z-20 text-orange-500 ml-5"
           width="10"
           height="10"
           viewBox="5 -8 30 30"
@@ -43,7 +43,7 @@ const responsiveMenu = [
         </svg>
       </div>
       <div className=" hidden sm:flex  ">
-        <ul className="flex mt-2  text-xs font-light font-serif">
+        <ul className="flex my-2  text-base lg:text-xl font-light font-serif">
           <li className="mx-1.5">
             <Link href="#home">
               <a className=" hover:text-orange-500 ">HOME</a>
@@ -74,7 +74,7 @@ const responsiveMenu = [
       <div className="hidden sm:flex">
         <svg
           id="#lupa"
-          className="h-5 w-5 text-black-500 mt-2"
+          className="h-8 w-8 text-black-500 mt-2"
           width="10"
           height="10"
           viewBox="0 0 40 30"
@@ -109,7 +109,7 @@ const responsiveMenu = [
         <div className="flex mr-5 ">
           <svg
             id="#lupa"
-            className=" h-5 w-5 text-black-500 mt-2 flex"
+            className=" h-6 w-6 text-black-500 mt-2 flex"
             width="10"
             height="10"
             viewBox="0 0 40 30"
@@ -126,7 +126,7 @@ const responsiveMenu = [
           </svg>
           <svg
             id="#lineas"
-            className="h-5 w-5 text-orange-500 flex"
+            className="h-6 w-6 text-orange-500 flex"
             width="24"
             height="24"
             viewBox="10 -2 15 20"
