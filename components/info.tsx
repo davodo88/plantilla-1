@@ -1,9 +1,9 @@
 import React from "react";
 import Image from "next/image";
 import EscalerasBlancas from "../images/informacion/escalerasBlancas.jpg"
-import EsquinaCristalera from "../images/informacion/esquinaCristalera.jpg"
-import PasilloOscuro from "../images/informacion/pasilloOscuro.jpg"
-import FachadaNaranja from "../images/informacion/fachadaNaranja.jpg"
+import concreteCorner from "../images/informacion/concreteCorner.jpg"
+import pasillo from "../images/informacion/pasillo.jpg"
+import modernBuilding from "../images/informacion/edificioGris.jpg" 
 
 function Info () {
     return (
@@ -48,7 +48,8 @@ function Info () {
         </div>
         <div className="block sm:grid grid-cols-2 gap-3 ">
           <div className="block my-4 sm:ml-7 justify-self-center">
-            <Image src={FachadaNaranja} width={800} height={250}></Image>
+            <Image src={modernBuilding} width={800} height={250}
+            className="object-cover" ></Image>
             <div className="text-center sm:text-left">
               <span className="text-orange-500 ">Residential</span>
               <br />
@@ -56,7 +57,8 @@ function Info () {
             </div>
           </div>
           <div className=" block my-4 sm:mr-7 justify-self-center ">
-            <Image src={EscalerasBlancas} width={800} height={250}></Image>
+            <Image src={EscalerasBlancas} width={800} height={250}
+            className="object-cover" ></Image>
             <div className="text-center sm:text-left">
               <span className="text-orange-500">Residential</span>
               <br />
@@ -64,7 +66,8 @@ function Info () {
             </div>
           </div>
           <div className=" block my-4  sm:ml-7 justify-self-center">
-            <Image src={PasilloOscuro} width={800} height={250}></Image>
+            <Image src={pasillo} width={800} height={250}
+            className="object-cover" ></Image>
             <div className="text-center sm:text-left">
               <span className="text-orange-500">Residential</span>
               <br />
@@ -72,7 +75,8 @@ function Info () {
             </div>
           </div>
           <div className=" sm:block my-4 sm:mr-7 justify-self-center">
-            <Image src={EsquinaCristalera} width={800} height={250}></Image>
+            <Image src={concreteCorner} width={800} height={250}
+            className="object-cover"></Image>
             <div className="text-center sm:text-left">
               <span className="text-orange-500">Residential</span>
               <br />
