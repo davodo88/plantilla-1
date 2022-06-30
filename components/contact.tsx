@@ -8,11 +8,11 @@ import { faAt, faMapLocation, faPhone, faVoicemail,  } from "@fortawesome/free-s
 function Contact () {
     return (
       <section className="inline-block justify-evenly md:flex w-screen bg-slate-100">
-        <div className="w-screen md:w-1/3 inline-block px-24 py-10 my-10 md:m-10">
-          <div className="flex mb-3 justify-start text-2xl text-black font-extrabold underline decoration-orange-500">
+        <div className="w-screen lg:w-1/3 inline-block px-12 md:px-24 py-10 my-10 md:m-10 lg:ml-32">
+          <div className="flex mb-3 justify-center md:justify-start text-2xl text-black font-extrabold underline decoration-orange-500">
             Contact
           </div>
-          <div className="flex mb-2 justify-start">
+          <div className="flex mb-8 md:mb-2 text-center md:text-left md:justify-start">
             Lorem ipsum dolor sit, amet consectetur adipisicing elit.
             Iste commodi minus autem voluptates mollitia tenetur optio fugiat deserunt rem provident. 
           </div>
@@ -30,7 +30,7 @@ function Contact () {
           </div>
           <div className=""></div>
         </div>
-        <div className="w-screen md:w-1/2 py-10 px-8 md:px-24">
+        <div className="flex w-screen lg:w-1/2 py-10 px-8 md:py-16 md:mr-10 md:px-2 lg:px-24">
           <iframe
             src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d6995.88623529849!2d1.527265896353801!3d42.50414048981966!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ses!2ses!4v1652782886959!5m2!1ses!2ses"
             width="100%"
