@@ -8,7 +8,7 @@ import { faAt, faMapLocation, faPhone, faVoicemail,  } from "@fortawesome/free-s
 function Contact () {
     return (
       <section className="inline-block justify-evenly md:flex w-screen bg-slate-100">
-        <div className="w-screen md:w-1/3 inline-block px-24 py-10 my-10 md:m-10 bg-slate-200/50">
+        <div className="w-screen md:w-1/3 inline-block px-24 py-10 my-10 md:m-10">
           <div className="flex mb-3 justify-start text-2xl text-black font-extrabold underline decoration-orange-500">
             Contact
           </div>
